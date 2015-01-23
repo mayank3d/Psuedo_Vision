@@ -1,0 +1,27 @@
+function main(N,handles)
+
+SetText('################################',handles);
+disp('Asmi Started');
+SetText('Asmi Started',handles);
+
+port=ConfigureParallelPort(handles);
+
+vid=ConfigureVid(handles);
+start(vid);
+
+while(vid.FramesAcquired<=N)          % Stop after 100 frames 
+SetText('************',handles);
+    TakeSnapshot(vid,handles);
+    x=ReadImage(handles);
+    x=ConvertToGray(x,handles);
+    x=Normalize(x,handles);
+    x=DetectEdge(x,handles);
+    [a,b]=Defuzzify(x,handles);
+    SendDecision(a,b,port,handles);
+    
+end
+
+stop(vid);
+disp('Asmi Stopped');
+SetText('Asmi Stopped',handles);
+SetText('################################',handles);

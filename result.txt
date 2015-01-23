@@ -1,0 +1,4 @@
+
+Results and Conclusion
+
+The system is capable of detecting and traversing a specified path and avoiding obstacles in the way autonomously. Its performace can be improved further by applying advanced hardware interface.The application developed can be further extended to add more and advanced features depending on the requirements of the system it is developed for. It can even be modified to suit the different types of systems as there prerequisites ; Further advancements will lead to better and more useful application being developed for future uses and more compatibility to the emerging technologies. It could be further applied to real time applications where the execution of modules is constrained by timing deadlines.

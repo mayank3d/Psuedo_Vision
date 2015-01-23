@@ -1,0 +1,9 @@
+function r=TakeSnapshot(vid,handles)
+
+% vid=ConfigureVid();
+% data = getsnapshot(vid);               % Getting snapshot 
+% imshow(data);                          % Displaying snapshot in window
+% imwrite(data,'Asmi.jpg');       
+r='snapshot';
+disp('Snapshot taken');
+se

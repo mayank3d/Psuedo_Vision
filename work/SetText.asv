@@ -1,0 +1,10 @@
+function SetText(str,handles)
+
+% val=get(handles.ResultTextBox,'String');
+% y=strvcat('hi','hello');
+% set(handles.ResultTextBox,'String',y);
+
+ResultsStr = get(handles.ResultList,'String');
+ResultsStr = [ResultsStr;str];
+set(handles.ResultList,'String',ResultsStr);
+
